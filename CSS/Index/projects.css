@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.allProjects{
+    height: 1725px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.allProjects .title{
+    margin-top: 70px;
+    color: rgb(70, 70, 70);
+    letter-spacing: 0.1px;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+
+
+
+
+.allProjects .project1{
+    position: relative;
+    margin-top: 50px;
+    width: 65%;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.65) 0px 20px 80px 0px;
+    overflow: hidden;
+    margin-right: 7%;
+    background: url('../../Images/Traction.png');
+    background-size: cover;
+}
+
+.allProjects .project1 .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.allProjects .project1 .forHover{
+    position: absolute;
+    background: linear-gradient(90deg, rgba(18, 27, 57, 0.7), rgba(50, 89, 161, 0.7));
+    width: 0%;
+    height: 100%;
+    opacity: 0.9;
+    transition: all 1s;
+}
+
+.allProjects .project1 .projectName{
+    position: absolute;
+    font-size: 44px;
+    color: rgb(225, 225, 225);
+    font-style: italic;
+    font-weight: 800;
+    z-index: 1;
+    letter-spacing: 1.5px;
+    right: 10%;
+    top: 36%;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .project1 .projectTagline{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(225, 225, 225);
+    font-style: italic;
+    font-weight: 200;
+    z-index: 1;
+    right: 10%;
+    top: 53%;
+    letter-spacing: 1px;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .project1 .knowMoreButton{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, rgb(221, 71, 64), rgb(223, 109, 82));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 66%;
+    right: 10%;
+    z-index: 1;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .project1 .knowMoreButton p{font-size: 18px;}
+
+.allProjects .project1 .projectNumber{
+    font-size: 150px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    font-weight: 800;
+    top: 0;
+    left: 2%;
+    color: rgb(200, 200, 200);
+    transition: all 0.4s 0.4s;
+    opacity: 0;
+}
+
+
+
+
+
+.allProjects .project1:hover .forHover{
+    width: 100%;
+}
+.allProjects .project1:hover .projectName{
+    font-size: 48px;
+    top: 36%;
+}
+.allProjects .project1:hover .projectTagline{
+    font-size: 24px;
+    top: 56%;
+    color: white;
+}
+.allProjects .project1:hover .knowMoreButton{
+    height: 50px;
+    width: 150px;
+    top: 71%;
+    color: white;
+}
+.allProjects .project1:hover .projectNumber{
+    color: white;
+    top: -2%;
+    opacity: 1;
+}
+
+
+
+
+
+
+.allProjects .project2{
+    position: relative;
+    margin-top: 50px;
+    width: 65%;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.65) 0px 20px 80px 0px;
+    overflow: hidden;
+    margin-left: 7%;
+    background: url("../../Images/DepressionDetection.png");
+    background-size: cover;
+    position: relative;
+}
+
+.allProjects .project2 .forHover{
+    background: linear-gradient(90deg, rgb(18, 27, 57), rgb(50, 89, 161));
+    width: 0%;
+    height: 100%;
+    opacity: 0.9;
+    transition: all 1s;
+    position: absolute;
+    right: 0;
+}
+
+.allProjects .project2 .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.allProjects .project2 .projectName{
+    position: absolute;
+    font-size: 44px;
+    color: rgb(225, 225, 225);
+    font-style: italic;
+    font-weight: 800;
+    z-index: 1;
+    letter-spacing: 1.5px;
+    left: 10%;
+    top: 40%;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .project2 .projectTagline{
+    position: absolute;
+    font-size: 18px;
+    color: rgb(225, 225, 225);
+    font-style: italic;
+    font-weight: 200;
+    z-index: 1;
+    left: 10%;
+    top: 57%;
+    letter-spacing: 1px;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .project2 .knowMoreButton{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, rgb(221, 71, 64), rgb(223, 109, 82));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    z-index: 1;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .project1 .knowMoreButton p{font-size: 18px;}
+
+.allProjects .project2 .projectNumber{
+    font-size: 150px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    font-weight: 800;
+    top: 0;
+    right: 2%;
+    color: rgb(200, 200, 200);
+    transition: all 0.4s 0.4s;
+    opacity: 0;
+}
+
+
+
+
+.allProjects .project2:hover .forHover{
+    width: 100%;
+}
+.allProjects .project2:hover .projectName{
+    font-size: 48px;
+    top: 36%;
+}
+.allProjects .project2:hover .projectTagline{
+    font-size: 24px;
+    top: 56%;
+    color: white;
+}
+.allProjects .project2:hover .knowMoreButton{
+    height: 50px;
+    width: 150px;
+    top: 71%;
+    color: white;
+}
+.allProjects .project2:hover .projectNumber{
+    color: white;
+    top: -2%;
+    opacity: 1;
+}
+
+
+
+
+.allProjects .project3{
+    position: relative;
+    margin-top: 50px;
+    width: 65%;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.65) 0px 20px 80px 0px;
+    overflow: hidden;
+    margin-right: 7%;
+    background: url("../../Images/Cybersecurity.png");
+    background-size: cover;
+}
+
+.allProjects .project3 .overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.allProjects .project3 .forHover{
+    position: absolute;
+    background: linear-gradient(90deg, rgba(18, 27, 57, 0.7), rgba(50, 89, 161, 0.7));
+    width: 0%;
+    height: 100%;
+    opacity: 0.9;
+    transition: all 1s;
+}
+
+.allProjects .project3 .projectName{
+    position: absolute;
+    font-size: 44px;
+    color: rgb(225, 225, 225);
+    font-style: italic;
+    font-weight: 800;
+    z-index: 1;
+    letter-spacing: 1.5px;
+    right: 10%;
+    top: 40%;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .project3 .projectTagline{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(225, 225, 225);
+    font-style: italic;
+    font-weight: 200;
+    z-index: 1;
+    right: 10%;
+    top: 57%;
+    letter-spacing: 1px;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .project3 .knowMoreButton{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, rgb(221, 71, 64), rgb(223, 109, 82));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 70%;
+    right: 10%;
+    z-index: 1;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .project3 .knowMoreButton p{font-size: 18px;}
+
+.allProjects .project3 .projectNumber{
+    font-size: 150px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    font-weight: 800;
+    top: 0;
+    left: 2%;
+    color: rgb(200, 200, 200);
+    transition: all 0.4s 0.4s;
+    opacity: 0;
+}
+
+
+
+
+
+.allProjects .project3:hover .forHover{
+    width: 100%;
+}
+.allProjects .project3:hover .projectName{
+    font-size: 48px;
+    top: 36%;
+}
+.allProjects .project3:hover .projectTagline{
+    font-size: 24px;
+    top: 56%;
+    color: white;
+}
+.allProjects .project3:hover .knowMoreButton{
+    height: 50px;
+    width: 150px;
+    top: 71%;
+    color: white;
+}
+.allProjects .project3:hover .projectNumber{
+    color: white;
+    top: -2%;
+    opacity: 1;
+}
+
+
+
+@media only screen and (max-width: 1240px){
+    .allProjects .project1, .allProjects .project2, .allProjects .project3{width: 75%;}
+}
+
+@media only screen and (max-width: 1050px){
+    .allProjects .project1, .allProjects .project2, .allProjects .project3{width: 85%;}
+}
+
+@media only screen and (max-width: 950px){
+    .projectTagline{display: none;}
+
+    .allProjects .project1{width: 85%;}
+    .allProjects .project1 .projectName{position: absolute; top: 42%; right: 10%;}
+    .allProjects .project1 .knowMoreButton{position: absolute; top: 60%; right: 10%;}
+    .allProjects .project1:hover .knowMoreButton{top: 61%;}
+    .allProjects .project1 .projectNumber{font-size: 125px;}
+
+    .allProjects .project2{width: 85%;}
+    .allProjects .project2 .projectName{position: absolute; top: 42%; right: 10%;}
+    .allProjects .project2 .knowMoreButton{position: absolute; top: 60%; right: 10%;}
+    .allProjects .project2:hover .knowMoreButton{top: 61%;}
+    .allProjects .project2 .projectNumber{font-size: 125px;}
+
+    .allProjects .project3{width: 85%;}
+    .allProjects .project3 .projectName{position: absolute; top: 42%; right: 10%;}
+    .allProjects .project3 .knowMoreButton{position: absolute; top: 60%; right: 10%;}
+    .allProjects .project3:hover .knowMoreButton{top: 61%;}
+    .allProjects .project3 .projectNumber{font-size: 125px;}
+}
+
+/* Works till 800px */

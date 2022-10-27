@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.appContent{
+    margin-top: 140px;
+    display: flex;
+    width: 75%;
+    align-items: center;
+    justify-content: start;
+}
+
+.appLogo{
+    width: 140px; 
+    height: 140px;
+    border-radius: 25px;
+    background: url("../../Images/TractionLogo.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.enclosingDetails{
+    margin-left: 3%;
+    color: white;
+}
+
+.enclosingDetails .appName{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.enclosingDetails .developerName{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(200, 200, 200);
+    line-height: 22px;
+}
+
+.enclosingDetails .designedFor{
+    margin-top: 7px;
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(175, 175, 175);
+    line-height: 18px;
+}
+
+.enclosingDetails .cost{
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(175, 175, 175);
+    line-height: 18px;
+    margin-top: 20px;
+}
+
+
+.appPhotos{
+    position: absolute;
+    margin-top: 320px;
+    width: 1015px;
+    height: 616px;
+    background: url("../../Images/TractionAppStore.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.whiteBottom{
+    height: 400px;
+    background-color: rgb(48, 49, 64);
+    width: 100%; 
+    position: relative;   
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+}
+
+.whiteBottom .note{
+    width: 60%;
+    line-height: 30px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    bottom: 60px;
+}
+
+.explanation{
+    height: 1850px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.explanation .title{
+    margin-top: 70px;
+    color: rgb(70, 70, 70);
+    letter-spacing: 0.1px;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.explanation .textF1{
+    margin-top: 40px;
+    font-size: 18px;
+    text-align: center;
+    width: 70%;
+    line-height: 30px;
+}
+
+.enclosingFrance1{
+    width: 1200px;
+    height: 700px;
+    border-radius: 100px;
+    position: absolute;
+    margin-top: 280px;
+    box-shadow: rgba(0, 0, 0, 0.2) 10px 20px 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.france1{
+    width: 1014px;
+    height: 616px;
+    background: url("../../Images/TractionFrance1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.enclosingFrance2{
+    width: 740px;
+    height: 700px;
+    position: absolute;
+    border-radius: 100px;
+    margin-top: 1050px;
+    box-shadow: rgba(0, 0, 0, 0.2) 10px 20px 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 365px;
+    background-color: white;
+}
+
+.france2{
+    width: 650px;
+    height: 616px;
+    background: url("../../Images/TractionFrance2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.enclosingFrance3{
+    width: 370px;
+    margin-left: 800px;
+    height: 700px;
+    border-radius: 100px;
+    margin-top: 1050px;
+    box-shadow: rgba(0, 0, 0, 0.2) 10px 20px 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+}
+
+.france3{
+    width: 315px;
+    height: 616px;
+    background: url("../../Images/TractionThirdScreen.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.notes{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: rgb(48, 49, 64);
+}
+
+.notes .title{
+    margin-top: 70px;
+    color: rgb(220, 220, 220);
+    letter-spacing: 0.1px;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.notes .textF1{
+    margin-top: 40px;
+    font-size: 18px;
+    text-align: center;
+    width: 70%;
+    line-height: 30px;
+    color: white;
+}
+
+.enclosingNotesImage{
+    width: 1100px;
+    height: 650px;
+    border-radius: 100px;
+    position: absolute;
+    margin-top: 240px;
+    box-shadow: rgba(0, 0, 0, 0.2) 10px 20px 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notesImage{
+    width: 1000px;
+    height: 550px;
+    background: url("../../Images/NotesF1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 1215px){
+    .explanation{height: 1635px;}
+    .enclosingFrance1{width: 950px; height: 600px;}
+    .france1{width: 850px; height: 517px;}
+    .enclosingFrance2{height: 615px; width: 650px; margin-top: 940px;}
+    .france2{height: 517px; width: 546px;}
+    .enclosingFrance3{height: 615px; width: 325px; margin-top: 940px; margin-left: 650px;}
+    .france3{height: 517px; width: 264px;}
+    .notesImage{height: 517px; width: 940px;}
+    .enclosingNotesImage{height: 617px; width: 1040px;}
+    .notes{height: 950px;}
+}
+@media only screen and (max-width: 1100px){
+    .appPhotos{width: 783px; height: 475px;}
+    .enclosingNotesImage{width: 783px; height: 431px;}
+    .whiteBottom{height: 240px;}
+    .whiteBottom .note{bottom: 40px;}
+    .notesImage{height: 517px; width: 940px;}
+    .enclosingNotesImage{height: 617px; width: 1040px;}
+    .notes{height: 940px;}
+}
+@media only screen and (max-width: 1050px){
+    .explanation{height: 1540px;}
+    .enclosingFrance1{width: 850px; height: 556px;}
+    .france1{width: 750px; height: 456px;}
+    .enclosingFrance2{height: 556px; width: 551px; margin-left: 75px; margin-top: 900px;}
+    .france2{width: 481px; height: 456px;}
+    .enclosingFrance3{height: 556px; width: 283px; margin-top: 900px; margin-left: 565px;}
+    .france3{height: 456px; width: 233px;}
+    .notesImage{height: 429px; width: 780px}
+    .enclosingNotesImage{width: 880px; height: 529px;}
+    .notes{height: 850px;}
+}
+@media only screen and (max-width: 900px){
+    .appPhotos{width: 692px; height: 420px;}
+    .whiteBottom{height: 200px;}
+    .notesImage{height: 374px; width: 680px;}
+    .enclosingNotesImage{width: 780px; height: 474px;}
+    .notes{height: 785px;}
+}
+
+/* Works till 850px */
