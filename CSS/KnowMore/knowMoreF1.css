@@ -34,7 +34,7 @@
 .enclosingDetails .appName{
     font-size: 24px;
     font-weight: 700;
-    line-height: 30px;
+    /*line-height: 30px;*/
 }
 
 .enclosingDetails .developerName{
@@ -42,7 +42,7 @@
     font-size: 18px;
     font-weight: 400;
     color: rgb(200, 200, 200);
-    line-height: 22px;
+    /*line-height: 22px;*/
 }
 
 .enclosingDetails .designedFor{
