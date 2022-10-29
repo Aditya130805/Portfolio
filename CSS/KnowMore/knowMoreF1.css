@@ -138,17 +138,25 @@
     background-repeat: no-repeat;
 }
 
+.enclosingBoth{
+    margin-top: 825px;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    overflow: visible;
+}
+
 .enclosingFrance2{
     width: 740px;
     height: 700px;
-    position: absolute;
     border-radius: 100px;
-    margin-top: 1050px;
     box-shadow: rgba(0, 0, 0, 0.2) 10px 20px 60px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 365px;
     background-color: white;
 }
 
@@ -163,15 +171,12 @@
 
 .enclosingFrance3{
     width: 370px;
-    margin-left: 800px;
     height: 700px;
     border-radius: 100px;
-    margin-top: 1050px;
     box-shadow: rgba(0, 0, 0, 0.2) 10px 20px 60px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     background-color: white;
 }
 
@@ -238,9 +243,10 @@
     .explanation{height: 1635px;}
     .enclosingFrance1{width: 950px; height: 600px;}
     .france1{width: 850px; height: 517px;}
-    .enclosingFrance2{height: 615px; width: 650px; margin-top: 940px;}
+    .enclosingBoth{margin-top: 675px;}
+    .enclosingFrance2{height: 615px; width: 650px;}
     .france2{height: 517px; width: 546px;}
-    .enclosingFrance3{height: 615px; width: 325px; margin-top: 940px; margin-left: 650px;}
+    .enclosingFrance3{height: 615px; width: 325px;}
     .france3{height: 517px; width: 264px;}
     .notesImage{height: 517px; width: 940px;}
     .enclosingNotesImage{height: 617px; width: 1040px;}
@@ -259,9 +265,10 @@
     .explanation{height: 1540px;}
     .enclosingFrance1{width: 850px; height: 556px;}
     .france1{width: 750px; height: 456px;}
-    .enclosingFrance2{height: 556px; width: 551px; margin-left: 75px; margin-top: 900px;}
+    .enclosingBoth{margin-top: 575px;}
+    .enclosingFrance2{height: 556px; width: 551px;}
     .france2{width: 481px; height: 456px;}
-    .enclosingFrance3{height: 556px; width: 283px; margin-top: 900px; margin-left: 565px;}
+    .enclosingFrance3{height: 556px; width: 283px;}
     .france3{height: 456px; width: 233px;}
     .notesImage{height: 429px; width: 780px}
     .enclosingNotesImage{width: 880px; height: 529px;}
