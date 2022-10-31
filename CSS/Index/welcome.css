@@ -12,8 +12,8 @@
 
 .welcome{
     background-color: rgb(34, 35, 46);
-    /*height: 100vh;*/
-    height: 705px;
+    height: 100vh;
+    min-height: 705px;
     display: flex;
     justify-content: center;
     align-items: center;
