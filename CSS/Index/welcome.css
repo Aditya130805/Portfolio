@@ -12,8 +12,9 @@
 
 .welcome{
     background-color: rgb(34, 35, 46);
-    height: 100vh;
     min-height: 705px;
+    max-height: 735px;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
