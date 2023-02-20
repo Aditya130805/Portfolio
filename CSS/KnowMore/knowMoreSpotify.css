@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar */
+
+
+.welcome{
+    /* background-color: rgb(34, 35, 46); */
+    background: url("../../Images/Spotify.jpg");
+    background-size: cover;
+    background-position: 50%;
+    min-height: 705px;
+    max-height: 815px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(20, 20, 20, 0.75);
+}
+.welcome .centerLogo{
+    height: 300px;
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    /* left: 50%; */
+    transform: translateY(-50%);
+    /* transform: translate(-50%, -50%); */
+}
+.welcome nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80px;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    z-index: 10000;
+}
+
+
+
+.logoImage{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 8%;
+}
+.logoImage img{
+    height: 60px;
+    width: auto;
+}
+.navItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin-left: 100px;
+}
+.navItems p{
+    position: relative;
+    margin-left: 40px;
+}
+.navItems p a{
+    color: rgb(220, 220, 220);
+    text-decoration: none;
+    font-weight: 800;
+}
+.navItems p span {
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(221, 71, 64);
+    transition: all 0.6s;
+}
+.navItems p:hover span {
+    width: 100%;
+}
+
+
+/* Navbar end */
+
+
+/* On Landing */
+
+.spotifyDetails{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projectName{
+    font-size: 68px;
+    color: white;
+    font-style: italic;
+    font-weight: 800;
+    z-index: 1;
+    letter-spacing: 1.5px;
+    margin-bottom: 60px;
+}
+
+.projectTagline{
+    font-size: 30px;
+    color: rgb(235, 235, 235);
+    font-style: italic;
+    font-weight: 300;
+    z-index: 1;
+    letter-spacing: 1px;
+}
+
+
+/* On Landing end */
+
+.notes{
+    height: 1020px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: white;
+}
+
+.notes .title{
+    margin-top: 70px;
+    color: rgb(70, 70, 70);
+    letter-spacing: 0.1px;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.notes .textHow{
+    margin-top: 40px;
+    font-size: 24px;
+    width: 80%;
+    line-height: 30px;
+    color: black;
+}
+
+.notes .textHow ol{padding-left: 50px; margin-top: 35px;}
+.notes .textHow ol li{ font-size: 18px; font-weight: 700;}
+
+.notes .textHow ol li ul{padding-left: 50px; margin-bottom: 25px;}
+.notes .textHow ol li ul li{font-size: 16px; font-weight: 300;}
+
+.programLink{
+    width: 350px;
+    height: 80px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 10px 20px 60px 0px;
+}
+
+.programLink a{
+    text-decoration: underline;
+    font-size: 22px;
+    color: black;
+}
+
+.changingHeight{
+    height: auto!important;
+}
+
+
+
+.enclosingNotesVideo{
+    width: 1040px;
+    height: 662px;
+    border-radius: 100px;
+    position: absolute;
+    margin-top: 300px;
+    box-shadow: rgba(0, 0, 0, 0.25) 10px 20px 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notesVideo{
+    width: 900px;
+    height: 562px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.notesVideo video{
+    width: 900px;
+    height: 562px;
+}
+
+@media only screen and (max-width: 1100px){
+    .notesVideo{height: 488px; width: 780px}
+    .notesVideo video{height: 488px; width: 780px;}
+    .enclosingNotesVideo{width: 880px; height: 588px; margin-top: 350px;}
+}
+
+@media only screen and (max-width: 900px){
+    .notesVideo{height: 425px; width: 680px;}
+    .notesVideo video{height: 425px; width: 680px;}
+    .enclosingNotesVideo{width: 780px; height: 525px; margin-top: 420px;}
+    .notes .textHow{margin-top: 70px;}
+    .notes .title{margin-top: 80px;}
+}

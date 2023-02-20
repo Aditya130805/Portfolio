@@ -1,0 +1,692 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.allProjects{
+    position: relative;
+    height: 2225px;
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.allProjects .title{
+    margin-top: 70px;
+    color: rgb(70, 70, 70);
+    letter-spacing: 0.1px;
+    font-size: 42px;
+    font-weight: 800;
+}
+
+.newTag{
+    position: absolute;
+    top: 120px;
+    left: 81%;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: black;
+    z-index: 2;
+    background: url('../../Images/new.png');
+    background-size: cover;
+    transform: rotate(15deg);
+}
+
+
+
+
+
+
+.allProjects .projectTraction{
+    position: relative;
+    margin-top: 50px;
+    width: 65%;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.65) 0px 20px 80px 0px;
+    overflow: hidden;
+    margin-right: 7%;
+    background: url('../../Images/Traction.png');
+    background-size: cover;
+}
+
+.allProjects .projectTraction .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.allProjects .projectTraction .forHover{
+    position: absolute;
+    background: linear-gradient(90deg, rgba(18, 27, 57, 0.7), rgba(50, 89, 161, 0.7));
+    width: 0%;
+    height: 100%;
+    opacity: 0.9;
+    transition: all 1s;
+}
+
+.allProjects .projectTraction .projectName{
+    position: absolute;
+    font-size: 44px;
+    color: rgb(225, 225, 225);
+    font-style: italic;
+    font-weight: 800;
+    z-index: 1;
+    letter-spacing: 1.5px;
+    right: 10%;
+    top: 36%;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .projectTraction .projectTagline{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(225, 225, 225);
+    font-style: italic;
+    font-weight: 200;
+    z-index: 1;
+    right: 10%;
+    top: 53%;
+    letter-spacing: 1px;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .projectTraction .knowMoreButton{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, rgb(221, 71, 64), rgb(223, 109, 82));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 66%;
+    right: 10%;
+    z-index: 1;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .projectTraction .knowMoreButton p{font-size: 18px;}
+
+.allProjects .projectTraction .projectNumber{
+    font-size: 150px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    font-weight: 800;
+    top: 0;
+    left: 2%;
+    color: rgb(200, 200, 200);
+    transition: all 0.4s 0.4s;
+    opacity: 0;
+}
+
+
+
+
+
+.allProjects .projectTraction:hover .forHover{
+    width: 100%;
+}
+.allProjects .projectTraction:hover .projectName{
+    font-size: 48px;
+    top: 36%;
+}
+.allProjects .projectTraction:hover .projectTagline{
+    font-size: 24px;
+    top: 56%;
+    color: white;
+}
+.allProjects .projectTraction:hover .knowMoreButton{
+    height: 50px;
+    width: 150px;
+    top: 71%;
+    color: white;
+}
+.allProjects .projectTraction:hover .projectNumber{
+    color: white;
+    top: -2%;
+    opacity: 1;
+}
+
+
+
+
+
+
+.allProjects .projectDepressionDetection{
+    position: relative;
+    margin-top: 50px;
+    width: 65%;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.65) 0px 20px 80px 0px;
+    overflow: hidden;
+    margin-left: 7%;
+    background: url("../../Images/DepressionDetection.png");
+    background-size: cover;
+    position: relative;
+}
+
+.allProjects .projectDepressionDetection .forHover{
+    background: linear-gradient(90deg, rgb(18, 27, 57), rgb(50, 89, 161));
+    width: 0%;
+    height: 100%;
+    opacity: 0.9;
+    transition: all 1s;
+    position: absolute;
+    right: 0;
+}
+
+.allProjects .projectDepressionDetection .overlay{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.allProjects .projectDepressionDetection .projectName{
+    position: absolute;
+    font-size: 44px;
+    color: rgb(225, 225, 225);
+    font-style: italic;
+    font-weight: 800;
+    z-index: 1;
+    letter-spacing: 1.5px;
+    left: 10%;
+    top: 40%;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .projectDepressionDetection .projectTagline{
+    position: absolute;
+    font-size: 18px;
+    color: rgb(225, 225, 225);
+    font-style: italic;
+    font-weight: 200;
+    z-index: 1;
+    left: 10%;
+    top: 57%;
+    letter-spacing: 1px;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .projectDepressionDetection .knowMoreButton{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, rgb(221, 71, 64), rgb(223, 109, 82));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    z-index: 1;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .projectTraction .knowMoreButton p{font-size: 18px;}
+
+.allProjects .projectDepressionDetection .projectNumber{
+    font-size: 150px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    font-weight: 800;
+    top: 0;
+    right: 2%;
+    color: rgb(200, 200, 200);
+    transition: all 0.4s 0.4s;
+    opacity: 0;
+}
+
+
+
+
+.allProjects .projectDepressionDetection:hover .forHover{
+    width: 100%;
+}
+.allProjects .projectDepressionDetection:hover .projectName{
+    font-size: 48px;
+    top: 36%;
+}
+.allProjects .projectDepressionDetection:hover .projectTagline{
+    font-size: 24px;
+    top: 56%;
+    color: white;
+}
+.allProjects .projectDepressionDetection:hover .knowMoreButton{
+    height: 50px;
+    width: 150px;
+    top: 71%;
+    color: white;
+}
+.allProjects .projectDepressionDetection:hover .projectNumber{
+    color: white;
+    top: -2%;
+    opacity: 1;
+}
+
+
+
+
+.allProjects .projectCybersecurity{
+    position: relative;
+    margin-top: 50px;
+    width: 65%;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.65) 0px 20px 80px 0px;
+    overflow: hidden;
+    margin-right: 7%;
+    background: url("../../Images/Cybersecurity.png");
+    background-size: cover;
+}
+
+.allProjects .projectCybersecurity .overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.allProjects .projectCybersecurity .forHover{
+    position: absolute;
+    background: linear-gradient(90deg, rgba(18, 27, 57, 0.7), rgba(50, 89, 161, 0.7));
+    width: 0%;
+    height: 100%;
+    opacity: 0.9;
+    transition: all 1s;
+}
+
+.allProjects .projectCybersecurity .projectName{
+    position: absolute;
+    font-size: 44px;
+    color: rgb(225, 225, 225);
+    font-style: italic;
+    font-weight: 800;
+    z-index: 1;
+    letter-spacing: 1.5px;
+    right: 10%;
+    top: 40%;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .projectCybersecurity .projectTagline{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(225, 225, 225);
+    font-style: italic;
+    font-weight: 200;
+    z-index: 1;
+    right: 10%;
+    top: 57%;
+    letter-spacing: 1px;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .projectCybersecurity .knowMoreButton{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, rgb(221, 71, 64), rgb(223, 109, 82));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 70%;
+    right: 10%;
+    z-index: 1;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .projectCybersecurity .knowMoreButton p{font-size: 18px;}
+
+.allProjects .projectCybersecurity .projectNumber{
+    font-size: 150px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    font-weight: 800;
+    top: 0;
+    left: 2%;
+    color: rgb(200, 200, 200);
+    transition: all 0.4s 0.4s;
+    opacity: 0;
+}
+
+
+
+
+
+.allProjects .projectCybersecurity:hover .forHover{
+    width: 100%;
+}
+.allProjects .projectCybersecurity:hover .projectName{
+    font-size: 48px;
+    top: 36%;
+}
+.allProjects .projectCybersecurity:hover .projectTagline{
+    font-size: 24px;
+    top: 56%;
+    color: white;
+}
+.allProjects .projectCybersecurity:hover .knowMoreButton{
+    height: 50px;
+    width: 150px;
+    top: 71%;
+    color: white;
+}
+.allProjects .projectCybersecurity:hover .projectNumber{
+    color: white;
+    top: -2%;
+    opacity: 1;
+}
+
+
+.allProjects .projectCybersecurity{
+    position: relative;
+    margin-top: 50px;
+    width: 65%;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.65) 0px 20px 80px 0px;
+    overflow: hidden;
+    margin-right: 7%;
+    background: url("../../Images/Cybersecurity.png");
+    background-size: cover;
+}
+
+.allProjects .projectCybersecurity .overlay{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.allProjects .projectCybersecurity .forHover{
+    position: absolute;
+    background: linear-gradient(90deg, rgba(18, 27, 57, 0.7), rgba(50, 89, 161, 0.7));
+    width: 0%;
+    height: 100%;
+    opacity: 0.9;
+    transition: all 1s;
+}
+
+.allProjects .projectCybersecurity .projectName{
+    position: absolute;
+    font-size: 44px;
+    color: rgb(225, 225, 225);
+    font-style: italic;
+    font-weight: 800;
+    z-index: 1;
+    letter-spacing: 1.5px;
+    right: 10%;
+    top: 40%;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .projectCybersecurity .projectTagline{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(225, 225, 225);
+    font-style: italic;
+    font-weight: 200;
+    z-index: 1;
+    right: 10%;
+    top: 57%;
+    letter-spacing: 1px;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .projectCybersecurity .knowMoreButton{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, rgb(221, 71, 64), rgb(223, 109, 82));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 70%;
+    right: 10%;
+    z-index: 1;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .projectCybersecurity .knowMoreButton p{font-size: 18px;}
+
+.allProjects .projectCybersecurity .projectNumber{
+    font-size: 150px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    font-weight: 800;
+    top: 0;
+    left: 2%;
+    color: rgb(200, 200, 200);
+    transition: all 0.4s 0.4s;
+    opacity: 0;
+}
+
+
+
+
+
+.allProjects .projectCybersecurity:hover .forHover{
+    width: 100%;
+}
+.allProjects .projectCybersecurity:hover .projectName{
+    font-size: 48px;
+    top: 36%;
+}
+.allProjects .projectCybersecurity:hover .projectTagline{
+    font-size: 24px;
+    top: 56%;
+    color: white;
+}
+.allProjects .projectCybersecurity:hover .knowMoreButton{
+    height: 50px;
+    width: 150px;
+    top: 71%;
+    color: white;
+}
+.allProjects .projectCybersecurity:hover .projectNumber{
+    color: white;
+    top: -2%;
+    opacity: 1;
+}
+
+
+
+
+
+.allProjects .projectSpotify{
+    position: relative;
+    margin-top: 50px;
+    width: 65%;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.65) 0px 20px 80px 0px;
+    overflow: hidden;
+    margin-left: 7%;
+    background: url("../../Images/Spotify.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.allProjects .projectSpotify .overlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.allProjects .projectSpotify .forHover{
+    position: absolute;
+    background: linear-gradient(90deg, rgba(18, 27, 57, 0.7), rgba(50, 89, 161, 0.7));
+    border-radius: 20px;
+    width: 0%;
+    height: 100%;
+    opacity: 0.9;
+    transition: all 1s;
+}
+
+.allProjects .projectSpotify .projectName{
+    position: absolute;
+    font-size: 44px;
+    color: rgb(225, 225, 225);
+    font-style: italic;
+    font-weight: 800;
+    z-index: 1;
+    letter-spacing: 1.5px;
+    right: 10%;
+    top: 40%;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .projectSpotify .projectTagline{
+    position: absolute;
+    font-size: 20px;
+    color: rgb(225, 225, 225);
+    font-style: italic;
+    font-weight: 200;
+    z-index: 1;
+    right: 10%;
+    top: 57%;
+    letter-spacing: 1px;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .projectSpotify .knowMoreButton{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, rgb(221, 71, 64), rgb(223, 109, 82));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 70%;
+    right: 10%;
+    z-index: 1;
+    transition: all 0.4s 0.4s;
+}
+
+.allProjects .projectSpotify .knowMoreButton p{font-size: 18px;}
+
+.allProjects .projectSpotify .projectNumber{
+    font-size: 150px;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    font-weight: 800;
+    top: 0;
+    left: 2%;
+    color: rgb(200, 200, 200);
+    transition: all 0.4s 0.4s;
+    opacity: 0;
+}
+
+
+
+
+
+.allProjects .projectSpotify:hover .forHover{
+    width: 100%;
+}
+.allProjects .projectSpotify:hover .projectName{
+    font-size: 48px;
+    top: 36%;
+}
+.allProjects .projectSpotify:hover .projectTagline{
+    font-size: 24px;
+    top: 56%;
+    color: white;
+}
+.allProjects .projectSpotify:hover .knowMoreButton{
+    height: 50px;
+    width: 150px;
+    top: 71%;
+    color: white;
+}
+.allProjects .projectSpotify:hover .projectNumber{
+    color: white;
+    top: -2%;
+    opacity: 1;
+}
+
+
+
+
+@media only screen and (max-width: 1240px){
+    .allProjects .projectTraction, .allProjects .projectDepressionDetection, .allProjects .projectCybersecurity, .allProjects .projectSpotify{width: 75%;}
+    .newTag{left:85%;}
+}
+
+@media only screen and (max-width: 1050px){
+    .allProjects .projectTraction, .allProjects .projectDepressionDetection, .allProjects .projectCybersecurity, .allProjects .projectSpotify{width: 85%;}
+    .newTag{left:88%; width: 105px; height: 105px;}
+}
+
+@media only screen and (max-width: 950px){
+    .projectTagline{display: none;}
+
+    .allProjects .projectTraction{width: 85%; margin-left: 10%;}
+    .allProjects .projectTraction .projectName{position: absolute; top: 42%; right: 10%;}
+    .allProjects .projectTraction .knowMoreButton{position: absolute; top: 60%; right: 10%;}
+    .allProjects .projectTraction:hover .knowMoreButton{top: 61%;}
+    .allProjects .projectTraction .projectNumber{font-size: 125px;}
+
+    .allProjects .projectDepressionDetection{width: 85%; margin-right: 10%;}
+    .allProjects .projectDepressionDetection .projectName{position: absolute; top: 42%; right: 10%;}
+    .allProjects .projectDepressionDetection .knowMoreButton{position: absolute; top: 60%; right: 10%;}
+    .allProjects .projectDepressionDetection:hover .knowMoreButton{top: 61%;}
+    .allProjects .projectDepressionDetection .projectNumber{font-size: 125px;}
+
+    .allProjects .projectCybersecurity{width: 85%; margin-left: 10%;}
+    .allProjects .projectCybersecurity .projectName{position: absolute; top: 42%; right: 10%;}
+    .allProjects .projectCybersecurity .knowMoreButton{position: absolute; top: 60%; right: 10%;}
+    .allProjects .projectCybersecurity:hover .knowMoreButton{top: 61%;}
+    .allProjects .projectCybersecurity .projectNumber{font-size: 125px;}
+
+    .allProjects .projectSpotify{width: 85%; margin-right: 10%;}
+    .allProjects .projectSpotify .projectName{position: absolute; top: 42%; right: 10%;}
+    .allProjects .projectSpotify .knowMoreButton{position: absolute; top: 60%; right: 10%;}
+    .allProjects .projectSpotify:hover .knowMoreButton{top: 61%;}
+    .allProjects .projectSpotify .projectNumber{font-size: 125px;}
+    .newTag{left:84%; width: 100px; height: 100px;}
+    
+}
+
+/* Works till 800px */
