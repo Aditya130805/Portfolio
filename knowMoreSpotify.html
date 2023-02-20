@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="CSS/Index/welcome.css"> -->
+    <link rel="stylesheet" href="CSS/KnowMore/knowMoreSpotify.css">
+    <link rel="stylesheet" href="CSS/Index/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="Images/LogoWhite.ico">
+    <title>Cybersecurity | Aditya Agarwal</title>
+</head>
+<body>
+    <section class="welcome" id="welcome">
+        <div class="overlay"></div>
+        <nav>
+            <div class="logoImage">
+                <a href="index.html"><img src="Images/LogoWhite.png" alt="Logo"></a>
+            </div>
+            <div class="navItems">
+                <p style="overflow: visible;"><a href="index.html">Turn Back Home</a><span></span></p>
+            </div>
+        </nav>
+
+        <div class="spotifyDetails">
+            <p class="projectName">Spotify "Advert Muter"</p>
+            <p class="projectTagline">Mutes all Spotify advertisements!</p>
+        </div>
+        
+    </section>
+
+    <section class="notes changingHeight">
+        <div class="title">How did I do it?</div>
+        <div class="textHow">
+            The process was simple:
+            <ol>
+                <li>
+                    Get the currently playing track
+                    <ul>
+                        <li>The Spotify API was used to get the link to the data containing the currently playing track.</li>
+                        <li>A request was sent to that URL - the authorization code (a.k.a. the access token) was obtained beforehand from Spotify for Developers.</li>
+                        <li>The JSON response was stored in a variable.</li>
+                        <li>From the dictionary formed in the variable, the currently playing track was obtained.</li>
+                    </ul>
+                </li>
+                <li>
+                    Identify whether it is a song or an advert
+                    <ul>
+                        <li>If the current track was a song, a valid result was returned.</li>
+                        <li>If the current track was an advertisement, the program resulted in an error.</li>
+                        <li>Hence, a try, except block was utilized to identify whether the track playing was a song or an advertisement.</li>
+                    </ul>
+                </li>
+                <li>
+                    Reduce/Increase the device volume based on whether it was a song or an advert
+                    <ul>
+                        <li>The device volume was modified via 'applescript'. Note that this implies that the program only runs on MacOS.</li>
+                        <li>Set volumes were decided for both songs and advertisements.</li>
+                        <li>Volumes were accordingly changed via the 'applecript' module in python.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        <div class="programLink"><i class="fa fa-code" style="font-size: 24px; font-weight: 700; margin-right: 10px;"></i><a href="spotifyAdvertMuter.py" target="_blank">spotifyAdvertMuter.py</a></div>
+    </section>
+    
+    <section class="notes" style="background-color: rgb(48, 49, 64); height: 1060px;">
+        <div class="title" style="color: rgb(220, 220, 220);">OAuth/Authorization token</div>
+        <div class="textHow" style="color: white; font-size: 20px; font-weight: 300; line-height: 35px;">To get the OAuth token and input it into the program, follow the steps depicted in the video below in order to allow the program to access the Spotify API. Note that the OAuth Token only lasts for 60 minutes; therefore, a new one has to be generated and inserted in place of the previous one.</div>
+        <div class="enclosingNotesVideo">
+            <div class="notesVideo">
+                <video preload="auto" poster="Images/SpotifyPoster.png" controls> 
+                    <source src="Videos/SpotifyOAuth.mp4" type="video/mp4"> 
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer" style="background-color: rgb(43, 44, 59); border: 4px solid rgba(84, 176, 82, 0.8);">
+        <p style="font-size: 22px; font-weight: 400; letter-spacing: 1.1px; color: rgb(200, 200, 200);"><span style="font-size: 24px; font-weight: 700; color: white;">"</span>Enjoy the next <span style="font-size: 24px; font-weight: 700; color: white;">60 minutes</span> of uninterrupted listening<span style="font-size: 24px; font-weight: 700; color: white;">"</span></p>
+    </section>
+
+    <section class="footer">
+        Copyright © 2022 Aditya Agarwal. All rights reserved.
+        <p>Contact me at <span style="text-decoration: underline;">adityauniversity1308@gmail.com</span></p>
+    </section>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>
